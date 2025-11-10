@@ -1,8 +1,8 @@
-import React, { Component } from "react";
-import { Button } from "reactstrap";
-import { connect } from "react-redux";
-import axios from "axios";
-import { Formik } from "formik";
+import React, { Component } from 'react';
+import { Button } from 'reactstrap';
+import { connect } from 'react-redux';
+import axios from 'axios';
+import { Formik } from 'formik';
 
 const mapStateToProps = (state) => {
     return {
@@ -18,9 +18,9 @@ class Checkout extends Component {
         super(props);
         this.state = {
             values: {
-                deliveryAddress: "",
-                phone: "",
-                paymentType: "",
+                deliveryAddress: '',
+                phone: '',
+                paymentType: '',
             },
             message: null,
         };
@@ -41,19 +41,19 @@ class Checkout extends Component {
                 {this.state.message}
                 <h4
                     style={{
-                        border: "1px solid grey",
-                        boxShadow: "1px 1px #888888",
-                        borderRadius: "5px",
-                        padding: "20px",
+                        border: '1px solid grey',
+                        boxShadow: '1px 1px #888888',
+                        borderRadius: '5px',
+                        padding: '20px',
                     }}
                 >
                     Payment: {this.props.totalPrice} BDT
                 </h4>
                 <Formik
                     initialValues={{
-                        deliveryAddress: "",
-                        phone: "",
-                        paymentType: "Cash on Delivery",
+                        deliveryAddress: '',
+                        phone: '',
+                        paymentType: 'Cash on Delivery',
                     }}
                     onSubmit={(values) => {
                         const order = {
@@ -65,7 +65,7 @@ class Checkout extends Component {
                         };
                         axios
                             .post(
-                                "https://burger-builder-50739-default-rtdb.firebaseio.com/order.json?auth=" +
+                                'https://burger-builder-e7811-default-rtdb.firebaseio.com/order.json?auth=' +
                                     this.props.token,
                                 order
                             )
@@ -103,19 +103,19 @@ class Checkout extends Component {
                     validate={(values) => {
                         const errors = {};
                         if (!values.deliveryAddress) {
-                            errors.deliveryAddress = "Required";
+                            errors.deliveryAddress = 'Required';
                         } else if (!values.phone) {
-                            errors.phone = "Required";
+                            errors.phone = 'Required';
                         } else if (!values.paymentType) {
-                            errors.paymentType = "Required";
+                            errors.paymentType = 'Required';
                         }
 
                         if (values.deliveryAddress.length <= 0) {
                             errors.deliveryAddress =
-                                "Please add your address...";
+                                'Please add your address...';
                         }
                         if (isNaN(values.phone) && values.phone.length <= 0) {
-                            errors.phone = "Please add a valid phone number...";
+                            errors.phone = 'Please add a valid phone number...';
                         }
                         return errors;
                     }}
@@ -124,10 +124,10 @@ class Checkout extends Component {
                         <form
                             onSubmit={handleSubmit}
                             style={{
-                                border: "1px solid grey",
-                                boxShadow: "1px 1px #888888",
-                                borderRadius: "5px",
-                                padding: "20px",
+                                border: '1px solid grey',
+                                boxShadow: '1px 1px #888888',
+                                borderRadius: '5px',
+                                padding: '20px',
                             }}
                         >
                             <textarea
@@ -167,7 +167,7 @@ class Checkout extends Component {
                             <br />
                             <Button
                                 type="submit"
-                                style={{ backgroundColor: "#D70F64" }}
+                                style={{ backgroundColor: '#D70F64' }}
                                 className="me-auto"
                             >
                                 Place Order

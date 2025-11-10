@@ -32,7 +32,7 @@ export const fetchOrders = (token, userId) => (dispatch) => {
     const queryParams = '&orderBy="userId"&equalTo="' + userId + '"';
     axios
         .get(
-            'https://burger-builder-50739-default-rtdb.firebaseio.com/order.json?auth=' +
+            'https://burger-builder-e7811-default-rtdb.firebaseio.com/order.json?auth=' +
                 token +
                 queryParams
         )
