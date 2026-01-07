@@ -1,0 +1,5 @@
+{
+  "name": "BurgerBuilder Pro",
+  "description": "A modernized, high-performance burger building application featuring real-time price calculation, Firebase authentication, and a sleek, responsive interface.",
+  "requestFramePermissions": []
+}
