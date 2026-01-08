@@ -32,12 +32,12 @@ Users can **sign up / sign in**, customize their burger, place an order with add
 
 ## 📸 Screenshots
 
-<img width="49%" height="100%" alt="localhost_3000_login" src="https://github.com/user-attachments/assets/c08be163-e2c9-4dbf-a938-2d640ec6d9d9" />
-<img width="49%" height="100%" alt="localhost_3000_ (1)" src="https://github.com/user-attachments/assets/7046e894-bdac-4605-afc2-7764769f51e7" />
-<img width="49%" height="100%" alt="localhost_3000_" src="https://github.com/user-attachments/assets/e890cfc0-5525-4b7a-83c4-c54686c4f40c" />
-<img width="49%" height="100%" alt="localhost_3000_login (1)" src="https://github.com/user-attachments/assets/c4fce434-f3bb-49de-9d9d-6c827684b7df" />
-<img width="49%" height="100%" alt="localhost_3000_login (3)" src="https://github.com/user-attachments/assets/ee7590a5-b723-440b-8de1-1cd4c2a17343" />
-<img width="49%" height="100%" alt="localhost_3000_orders" src="https://github.com/user-attachments/assets/6ea39a8d-8207-44ed-b622-f74d9e122c7f" />
+<img width="49%" height="100%" alt="localhost_3000_" src="https://github.com/user-attachments/assets/d9a798dd-a7b5-4887-9978-dc346f65dfe2" />
+<img width="49%" height="100%" alt="localhost_3000_ (2)" src="https://github.com/user-attachments/assets/0a7b3a69-6acf-43d1-b3fe-15c665838be9" />
+<img width="49%" height="100%" alt="localhost_3000_ (3)" src="https://github.com/user-attachments/assets/79d3df68-8e6b-49b2-93a3-4d8d18c57ca0" />
+<img width="49%" height="100%" alt="localhost_3000_ (4)" src="https://github.com/user-attachments/assets/138a9977-e425-4ffd-95d9-686c6b695255" />
+<img width="49%" height="100%" alt="localhost_3000_ (5)" src="https://github.com/user-attachments/assets/c648b18f-7fa2-4800-bae0-e086a9123072" />
+<img width="49%" height="100%" alt="localhost_3000_ (6)" src="https://github.com/user-attachments/assets/9f4813c2-f0fa-456a-85c1-e839946ce22d" />
 
 ---
 
