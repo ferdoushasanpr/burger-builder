@@ -37,6 +37,8 @@ Users can **sign up / sign in**, customize their burger, place an order with add
 <img width="49%" height="100%" alt="localhost_3000_ (3)" src="https://github.com/user-attachments/assets/79d3df68-8e6b-49b2-93a3-4d8d18c57ca0" />
 <img width="49%" height="100%" alt="localhost_3000_ (4)" src="https://github.com/user-attachments/assets/138a9977-e425-4ffd-95d9-686c6b695255" />
 <img width="49%" height="100%" alt="localhost_3000_ (5)" src="https://github.com/user-attachments/assets/c648b18f-7fa2-4800-bae0-e086a9123072" />
+<img width="49%" height="100%" alt="Screenshot 2026-02-14 221836" src="https://github.com/user-attachments/assets/298430a8-67fb-47a2-979c-842b3e286e31" />
+<img width="49%" height="100%" alt="Screenshot 2026-02-14 221856" src="https://github.com/user-attachments/assets/074dbd39-50d5-45cc-b6c6-c12e088b6cb8" />
 <img width="49%" height="100%" alt="localhost_3000_ (6)" src="https://github.com/user-attachments/assets/9f4813c2-f0fa-456a-85c1-e839946ce22d" />
 
 ---
