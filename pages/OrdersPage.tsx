@@ -42,15 +42,21 @@ const OrdersPage: React.FC = () => {
                 {orders.map((order: Order) => (
                     <div key={order.id} className="bg-white rounded-3xl p-6 sm:p-8 shadow-md border border-slate-100 hover:shadow-xl transition-all group overflow-hidden relative">
                         {/* Status badge */}
-                        <div className="absolute top-0 right-0 px-6 py-2 bg-green-500 text-white text-xs font-bold rounded-bl-3xl">
-                            COMPLETED
+                        <div className={`absolute top-0 right-0 px-6 py-2 text-white text-[10px] font-black tracking-widest rounded-bl-3xl ${order.customer.paymentStatus === 'paid' ? 'bg-green-500' : 'bg-orange-500'}`}>
+                            {order.customer.paymentStatus === 'paid' ? 'PAID' : 'COD'}
                         </div>
 
                         <div className="flex flex-col md:flex-row justify-between gap-8">
                             <div className="flex-1 space-y-4">
                                 <div className="flex items-center space-x-3">
-                                    <div className="w-12 h-12 bg-orange-50 rounded-xl flex items-center justify-center text-orange-500">
+                                    <div className="w-12 h-12 bg-orange-50 rounded-xl flex items-center justify-center text-orange-500 relative">
                                         <i className="fas fa-receipt text-xl"></i>
+                                        {order.customer.paymentType === 'Bkash' && (
+                                            <span className="absolute -top-1 -right-1 w-5 h-5 bg-[#e2136e] text-white text-[8px] flex items-center justify-center rounded-full font-bold">BK</span>
+                                        )}
+                                        {order.customer.paymentType === 'Card' && (
+                                            <span className="absolute -top-1 -right-1 w-5 h-5 bg-blue-600 text-white text-[8px] flex items-center justify-center rounded-full font-bold">CR</span>
+                                        )}
                                     </div>
                                     <div>
                                         <h4 className="font-bold text-slate-800">Order #{order.id.slice(-6).toUpperCase()}</h4>
@@ -65,11 +71,18 @@ const OrdersPage: React.FC = () => {
                                         </span>
                                     ))}
                                 </div>
+
+                                {order.customer.transactionId && (
+                                    <div className="mt-2 flex items-center text-[10px] font-mono bg-slate-100 w-fit px-2 py-1 rounded text-slate-500">
+                                        <i className="fas fa-hashtag mr-2 opacity-50"></i>
+                                        TX: {order.customer.transactionId}
+                                    </div>
+                                )}
                             </div>
 
                             <div className="flex flex-col justify-between items-end min-w-[140px] border-t md:border-t-0 md:border-l border-slate-100 pt-6 md:pt-0 md:pl-8">
                                 <div className="text-right w-full">
-                                    <span className="text-slate-400 text-xs font-bold uppercase tracking-wider block mb-1">Total Paid</span>
+                                    <span className="text-slate-400 text-xs font-bold uppercase tracking-wider block mb-1">Total {order.customer.paymentStatus === 'paid' ? 'Paid' : 'Amount'}</span>
                                     <span className="text-2xl font-black text-slate-900">{order.price.toFixed(0)} <span className="text-xs font-bold text-slate-400">BDT</span></span>
                                 </div>
                                 <div className="mt-4 w-full">

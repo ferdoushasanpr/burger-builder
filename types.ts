@@ -8,6 +8,8 @@ export interface CustomerDetails {
   deliveryAddress: string;
   phone: string;
   paymentType: string;
+  transactionId?: string;
+  paymentStatus: 'pending' | 'paid' | 'unpaid';
 }
 
 export interface Order {
