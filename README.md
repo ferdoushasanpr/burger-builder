@@ -1,8 +1,8 @@
 # 🍔 BurgerBuilder — Build and Order Your Custom Burger
 
-BurgerBuilder is a ReactJS web application that allows users to **build their own burger** by adding ingredients like salad, cheese, and meat.  
-Users can **sign up / sign in**, customize their burger, place an order with address and payment details, and view all their past orders.
+BurgerBuilder is a ReactJS web application that allows users to **build their own burger** by adding ingredients like salad, cheese, and meat. Users can **sign up / sign in**, customize their burger, place an order with address and payment details, and view all their past orders.
 
+🔗 **Live Demo:** [http://burgerbuilderpro.netlify.app/](http://burgerbuilderpro.netlify.app/)
 ---
 
 ## 🚀 Features
